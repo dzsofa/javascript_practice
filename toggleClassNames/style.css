@@ -1,0 +1,18 @@
+div {
+  text-align: center;
+  display: inline-block;
+}
+
+.passive {
+  color: white;
+  text-emphasis: none;
+  text-decoration-line: underline;
+  height: 100px;
+  width: 100px;
+  background-color: teal;
+}
+
+.active {
+  background-color: tomato;
+  font-weight: bold;
+}

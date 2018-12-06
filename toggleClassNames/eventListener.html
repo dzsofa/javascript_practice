@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <script>
+    var nrOfDivs = 10;
+
+    for (i = 0; i < nrOfDivs; i++) {
+      let oneDiv = document.createElement('div');
+      oneDiv.className = 'passive';
+      oneDiv.innerHTML = 'click me!';
+
+      oneDiv.addEventListener('click', function (event) {
+        console.log(event);
+
+        const activeElement = document.querySelector('.active');
+        if (activeElement !== null) {
+          activeElement.className = 'passive';
+        }
+        oneDiv.classList.add('active');
+      })
+      document.body.appendChild(oneDiv);
+    }
+  </script>
+</body>
+
+</html>

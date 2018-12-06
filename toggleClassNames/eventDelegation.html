@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="myDivs">
+  <script>
+    const divs = document.querySelector('.myDivs');
+    divs.addEventListener('click', (event) => {
+      if (event.target.matches('body')) {
+        return
+      }
+      const activeElement = document.querySelector('.active');
+      if (activeElement === null) {
+        event.target.classList.add('active');
+      } else if (activeElement !== null) {
+        if (event.target !== activeElement) {
+          event.target.classList.add('active');
+        } 
+        activeElement.className = 'passive';
+      }
+    })
+
+    var nrOfDivs = 10;
+    for (i = 0; i < nrOfDivs; i++) {
+      let oneDiv = document.createElement('div');
+      oneDiv.className = 'passive';
+      oneDiv.innerHTML = 'click me!';
+      document.body.appendChild(oneDiv);
+    }
+  </script>
+</body>
+
+</html>

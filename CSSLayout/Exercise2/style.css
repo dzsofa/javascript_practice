@@ -1,0 +1,26 @@
+
+/* .wrapper {
+  height: 385px;
+  width: 855px;
+  padding: 55px;
+} */
+
+.rectangle {
+  height: 330px;
+  width: 800px;
+  margin: 55px;
+  background:#ffd62a;
+  position: relative;
+}
+
+.square {
+  height: 105px;
+  width: 105px;
+  background: #b02aff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}

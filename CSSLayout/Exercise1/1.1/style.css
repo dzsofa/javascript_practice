@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  padding: 52px;
+}
+
+.item {
+  height: 190px;
+  width: 190px;
+}
+
+.green {
+  background: #51d400;
+}
+
+.yellow {
+  background: #ffd62a;
+}
+
+.purple {
+  background: #b02aff;
+}

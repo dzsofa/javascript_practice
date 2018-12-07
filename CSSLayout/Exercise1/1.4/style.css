@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 52px;
+  width: 482px;
+  height: 621px;
+  flex-direction: column;
+}
+
+.green {
+  background: #51d400;
+  flex-grow: 1;
+  width: inherit;
+  order: 0;
+}
+
+.yellow {
+  background: #ffd62a;
+  flex-grow: 2;
+  width: inherit;
+  order: 2;
+}
+
+.purple {
+  background: #b02aff;
+  flex-grow: 1;
+  width: inherit;
+  order: 1;
+}

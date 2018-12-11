@@ -1,0 +1,19 @@
+.container {
+  height: 280px;
+  width: 100%;
+  background: #ffd62a;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.item {
+  width: 105px;
+  height: 105px;
+  background: #b02aff;
+  list-style-type: none;
+  margin-left: 8px;
+} 

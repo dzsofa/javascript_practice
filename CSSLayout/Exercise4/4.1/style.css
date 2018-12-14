@@ -1,0 +1,38 @@
+main {
+  margin: auto;
+  width: 760px;
+  background:#ffd62a;
+  height: 90vh;
+  /* display: flex; */
+}
+
+header {
+  background: #b02aff;
+  position: fixed;
+  width: inherit;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-items: flex-start;
+}
+
+header ul {
+  padding: 0;
+}
+
+header li {
+  list-style-type: none;
+  background: #2aeaff;
+  height: 36px;
+  width: 84px;
+  float: left;
+  margin: auto 10px;
+}
+
+aside {
+  height: inherit;
+  float: right;
+  background: #51d400;
+  width: 250px;
+
+}

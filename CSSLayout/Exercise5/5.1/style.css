@@ -1,37 +1,44 @@
 body {
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+main {
   width: 540px;
+  min-height: 100%;
+  background: gray;
   margin: auto;
-  height: 90vh;
+  display: flex;
+  flex-direction: column;
 }
-
-.fixed {
-  position: fixed;
-  height: 100px;
-  width: inherit;
-}
-
-
 
 header {
+  height: 100px;
   background: #2aeaff;
   top: 0px;
 }
 
 footer {
+  height: 100px;;
   background: #0000fe;
   bottom: 0px;
 }
 
-aside {
-  height: inherit;
-  width: 100px;
+section {
+  flex: 1 1 100%;
+  display: flex;
 }
 
-main {
-  width: 300px;
-  height: inherit;
-  margin: auto;
+aside {
+  flex: 1 1 auto;
+}
+
+.center {
   background: #fe0000;
+  flex: 0 1 300px;
+  margin: 0 10px;
   position: relative;
 }
 
@@ -40,15 +47,14 @@ main {
   width: 50px;
   height: 50px;
   background: black;
-  margin: 0 30px 30px 0;
+  bottom: 30px;
+  right: 30px;
 }
 
 .left {
   background: #fea500;
-  float: left;
 }
 
 .right {
   background: #81007f;
-  float: right;
 }

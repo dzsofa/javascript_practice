@@ -1,0 +1,53 @@
+header {
+  background: #b02aff;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  height: 85px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding-left: 5vw;
+}
+
+header ul {
+  padding: 0;
+}
+
+header li {
+  list-style-type: none;
+  background: #2aeaff;
+  height: 36px;
+  width: 84px;
+  float: left;
+  margin-right: 10px;
+}
+
+main {
+  margin: 95px auto auto auto;
+  width: 90vw;
+  height: 80vh;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+footer {
+  background: #cccccc;
+  height: 65px;
+  bottom: 0px;
+  flex: 1 1 100%;
+  align-self: flex-end;
+}
+
+section {
+  background:#ffd62a;
+  flex: 2 1 60%;
+  height: 85%;
+  margin-left: 10px;
+}
+
+aside {
+  background: #51d400;
+  flex: 1 1 30%;
+  height: 85%;
+}

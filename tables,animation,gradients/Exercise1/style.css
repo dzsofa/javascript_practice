@@ -1,0 +1,55 @@
+main {
+  padding-top: 50px;
+  margin: auto;
+  width: 90vw;
+  height: 90vh;
+  background: #3E94EC;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 800px;
+  height: 510px;
+  overflow:hidden;
+  border-style: hidden;
+  border-radius: 8px;
+}
+
+tr:nth-child(odd) {
+  background: #EBEBEB;
+}
+  
+tr:nth-child(even) {
+  background: white;
+}
+
+th, td {
+  border: 1px solid gray;
+  padding-left: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+th {
+  height: 100px;
+  font-size: 40px;
+  font-weight: 50;
+  text-align: left;
+  background: rgb(29, 29, 29);
+  color: #BDC5CC;
+  border-bottom: 3px solid gray;
+}
+
+td {
+  font-size: 20px;
+  color: #71758D;
+}
+
+td[data-currency="usd"]::before {
+  content: "$ ";
+}
+
+td[data-currency="usd"]::after {
+  content: ".00";
+}
+

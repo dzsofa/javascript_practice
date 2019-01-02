@@ -1,0 +1,68 @@
+main {
+  height: 400px;
+  width: 800px;
+  background: #313841;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  position: relative;
+  border: none;
+  margin: 10px auto;
+  height: 30px;
+  width: 30px;
+  color: white;
+  background: #1c242b;
+  display: inline-block;
+}
+
+.delete, .sure {
+  display: none;
+}
+
+.fa-caret-right {
+  color: #1c242b;
+  position: absolute;
+  top: 8.5px;
+  left: 30px;
+  z-index: 2;
+}
+
+button[data-action="delete"] {
+  color: #f34541;
+}
+
+button[data-action="delete"]:hover>.delete{
+  display: inline-block;
+}
+
+
+button[data-action="sure"] {
+  color: #38ba7d;
+}
+
+button[data-action="sure"]:hover>.sure{
+  display: inline-block;
+}
+
+div {
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  color: white;
+  line-height: 30px;
+}
+
+div[class="sure"] {
+  background: #38ba7d;
+}
+
+div[class="delete"] {
+  background: #f34541;
+}

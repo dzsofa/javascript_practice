@@ -1,0 +1,31 @@
+body {
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  background: #333333;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 0.5em; 
+}
+
+.single {
+  background: #b02aff;
+  height: 200px;
+}
+
+.quadruple {
+  background: #51d400;
+  grid-area: 1 / 2 / 3 / 4;
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: 80%;
+  padding: 3em; 
+  align-content: center;
+  justify-content: center;
+}
+
+.nested {
+  background: #ffd62a;
+}

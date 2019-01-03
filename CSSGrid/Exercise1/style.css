@@ -1,0 +1,34 @@
+main {
+  background: #b02aff;
+  width: 1500px;
+  height: 500px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.container {
+  width: 1300px;
+  display: grid; 
+  background-color: #b02aff;
+  grid-template-columns: 250px 60% 250px;
+  grid-template-rows: 270px;
+  grid-column-gap: 10px;
+}
+
+.side {
+  background: #ffd62a;
+}
+
+.middle {
+  background: #51d400;
+}
+
+.item {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  color: white;
+  line-height: 270px;
+  text-align: center;
+}

@@ -19,7 +19,25 @@ main {
 header {
   background: #b02aff;
   grid-area: 1 / 1 / 2 / 19;
+  display: grid;
+  grid-template-columns: repeat(18, 55px); 
+  grid-gap: 1em;
 }
+
+ul {
+  padding: 0;
+  grid-column: 2 / 19;
+}
+
+li {
+  list-style-type: none;
+  background: #2aeaff;
+  height: 35px;
+  width: 115px;
+  float: left;
+  margin-right: 2em;
+}
+
 
 footer {
   background: #cccccc;
